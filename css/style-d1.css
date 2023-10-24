@@ -1,0 +1,311 @@
+body, h1, h2, p, ul, li, form, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    background-color: #BC96E6;
+    color: #210B2C;
+}
+
+header {
+    background-color: #55286F;
+    color: #BC96E6;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D8B4E2;
+    margin: 0 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #D8B4E2;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+hr {
+    border: 1px solid #55286F;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #55286F;
+    color: #D8B4E2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #D8B4E2;
+    display: block;
+    margin: 5px 0;
+}
+
+/* Web Forms section */
+#webforms {
+    background-color: #D8B4E2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#webforms h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#webforms form {
+    display: flex;
+    flex-direction: column;
+}
+
+#webforms label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#webforms input[type="text"],
+#webforms input[type="email"] {
+    padding: 5px;
+    margin: 5px 0;
+    width: 30%; 
+}
+
+#webforms input[type="button"] {
+    background-color: #55286F;
+    color: #D8B4E2;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#webforms input[type="button"]:hover {
+    background-color: #BC96E6;
+}
+
+
+
+
+/* This is a rem unit */
+#rem-unit {
+    font-size: 1.5rem; 
+}
+
+/* This is an em unit */
+#em-unit {
+    font-size: 2.2em; 
+}
+
+
+
+
+/* Text Decoration - by CLASS */ 
+p.solid {
+  text-decoration: solid;
+}
+
+p.underline {
+  text-decoration: underline;
+}
+
+p.linethrough {
+  text-decoration: line-through;
+}
+
+/* Text Transform - by ID */
+#uppercase {
+  text-transform: uppercase;
+}
+
+#lowercase {
+  text-transform: lowercase;
+}
+
+#capitalize {
+  text-transform: capitalize;
+}
+
+
+/* Text Align - by attribute selector */
+p[data-align="right"] {
+  text-align: right;
+}
+
+p[data-align="center"] {
+  text-align: center;
+}
+
+p[data-align="left"] {
+  text-align: left;
+}
+
+/* Text Indent section - by ID selector */
+#text-indent-section p {
+    text-indent: 30px; 
+}
+
+
+#card-component {
+    background-color: #C47AC0;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.card img {
+    margin-right: 20px; 
+}
+
+.card-description {
+    font-size: 1.1em;
+}
+
+.card-description p:first-child {
+    font-weight: bold;
+    color: #55286F;
+    text-align: center;
+}
+
+/* Styling using CSS child selector */
+
+.card-description p:first-child {
+    font-weight: bold;
+    color: #55286F;
+    text-align: center;
+}
+
+.card-description p:nth-child(2) {
+    font-size: 0.8em; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* OTHERS - by Class and ID selector */
+
+
+#line-height .line-2rem {
+  line-height: 2rem;
+}
+
+#line-height .line-4rem {
+  line-height: 4rem;
+}
+
+#letter-spacing .letter-02rem {
+  letter-spacing: 0.2rem;
+} 
+
+#letter-spacing .letter-04rem {
+  letter-spacing: 0.4rem;
+}
+
+#word-spacing .word-05rem {
+  word-spacing: 0.5rem;  
+}
+
+#word-spacing .word-1rem {
+  word-spacing: 1rem;
+}
+
+
+
+#font-weight .weight-300 {
+  font-weight: 300;
+}
+
+#font-weight .weight-400 {
+  font-weight: 400;
+}
+
+#font-weight .weight-500 {
+  font-weight: 500;
+}
+
+#font-weight .weight-800 {
+  font-weight: 800;
+}
+
+
+#font-weight .weight-light {
+  font-weight: light;
+}
+
+#font-weight .weight-bold {
+  font-weight: bold; 
+}
+
+#font-style .font-italic {
+  font-style: italic;
+}
+
+#font-style .font-normal {
+  font-style: normal;
+}
+
+#font-style .font-oblique {
+  font-style: oblique; 
+}
+
+#font-family p {
+  font-family: 'Poppins', sans-serif;
+}
+

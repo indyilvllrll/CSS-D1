@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="css/style-d1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+
+    <!-- 
+        https://coolors.co/210b2c-55286f-bc96e6-d8b4e2-ae759f
+        #210B2C
+        #55286F
+        #BC96E6
+        #D8B4E2
+        #AE759F
+     -->
+    
+</head>
+<body>
+    <header>
+        <h1>Introduction to CSS</h1>
+        <nav>
+            <a href="#selector">CSS Selector</a>
+            <a href="#webforms">Webforms</a>
+            <a href="#card-component">Card Component</a>
+            <a href="#css-unit">CSS Unit</a>
+            <a href="#font-properties">Font Properties</a>
+            
+        </nav>
+    </header>
+    <main>
+        <p>CSS or Cascading style sheet is used to give style and design to websites</p>
+
+        <hr>
+
+        <!-- SELECTOR -->
+        <section id="selector">
+            <h2>CSS Selectors</h2>
+                <ul>
+                    <div>
+                        <li>by element</li>
+                        <li>by id</li>
+                        <li>by class</li>
+                        <li>universal selector</li>
+                        <li>by attribute</li>
+                        <li>pseudo selector</li>
+                        <li>by child</li>
+                        <li>by descendant</li>
+                    </div>
+                </ul>
+            
+        </section>
+
+        <hr>
+
+        <!-- WEBFORMS -->
+        <section id="webforms">
+            <h2>Web Forms</h2>
+            <form action="">
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" placeholder="Add first name">
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" placeholder="Add last name">
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" placeholder="Add address">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Add email">
+                </div>
+                <div>
+                    <input type="button" value="Submit">
+                </div>
+            </form>
+        </section>
+
+
+        <hr>
+
+        <!-- CARD COMPONENT -->
+        <section id="card-component">
+            <h2>Card Title</h2>
+            <hr>
+            <div class="card">
+                <img src="baphomet.png" alt="" width="190px" height="240px">
+                <div class="card-description">
+                    <p>Baphomet Card</p>
+                    <p>Type: MVP Primary Weapon Card (Red)</p>
+                    <p>Hit -10</p>
+                    <p>ASPD +5%</p>
+                    <p>Normal attacks deal splash damage in a 2.5-meter radius.</p>
+                    <p>Collection Stat:</p>
+                    <p>ATK +3%</p>
+                </div>
+            </div>
+            <hr>
+            <div class="card">
+                <img src="deviling.jpg" alt="" width="190px" height="240px">
+                <div class="card-description">
+                    <p>Deviling Card</p>
+                    <p>Type: MVP Cloak Card (Red)</p>
+                    <p>Incoming Neutral Damage Reduction +30%</p>
+                    <p>You take 15% more damage from the other attributes</p>
+                    <p>Collection Stat:</p>
+                    <p>Incoming Neutral Damage Reduction +3%</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- CSS UNIT -->
+        <section id="css-unit">
+            <h2>CSS Units</h2>
+            <div>
+                <p>Page width</p>
+                <div>Content width</div>
+            </div>
+
+            <div>
+                <p id="rem-unit">This is a rem unit</p>
+                <p id="em-unit">This is an em unit</p>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="font-properties">
+            <h2>Font Properties</h2>
+            <div>
+                <div>
+                    <h3>Text Decoration</h3>
+                    <p class="solid">Solid</p>
+                    <p class="underline">Underline</p>
+                    <p class="linethrough">linethrough</p>  
+                </div> 
+                <div>
+                    <h3>Text Transform</h3>
+                    <p id="uppercase">uppercase</p>
+                    <p id="lowercase">LOWERCASE</p>
+                    <p id="capitalize">this is capitalize</p>
+                </div>       
+                <div>
+                    <h3>Text Align</h3>
+                    <p data-align="right">Right</p>
+                    <p data-align="center">Center</p>
+                    <p data-align="left">Left</p>
+                </div>    
+                <div id="text-indent-section">
+                    <h3>Text Indent</h3>
+                    <p>This paragraph is indented using CSS text-indent. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi aut incidunt esse dolorum eum ad sapiente. Veniam ullam necessitatibus corporis dicta assumenda</p>
+                </div>
+
+                <div id="line-height">
+                  <h3>Line Height</h3>
+                  <p class="line-2rem">Line height of 2rem</p>
+                  <p class="line-4rem">Line height of 4rem</p>
+                </div>
+
+                <div id="letter-spacing">
+                  <h3>Letter Spacing</h3>
+                  <p class="letter-02rem">Letter spacing of .2rem</p>
+                  <p class="letter-04rem">Letter spacing of .4rem</p>
+                </div>
+
+                <div id="word-spacing">
+                  <h3>Word Spacing</h3>
+                  <p class="word-05rem">Word spacing of .5rem</p>
+                  <p class="word-1rem">Word spacing of 1rem</p>
+                </div>
+
+                <div id="font-weight">
+                  <h3>Font Weight</h3>
+                  <p class="weight-300">Font weight: 300</p>
+                  <p class="weight-400">Font weight: 400</p>
+                  <p class="weight-500">Font weight: 500</p>
+                  <p class="weight-800">Font weight: 800</p>
+                  <p class="weight-light">Font weight: light</p>
+                  <p class="weight-bold">Font weight: bold</p>
+                </div>
+
+                <div id="font-style">
+                  <h3>Font Style</h3>
+                  <p class="font-italic">Italic</p>
+                  <p class="font-normal">Normal</p>
+                  <p class="font-oblique">Oblique</p> 
+                </div>
+
+                <div id="font-family">
+                  <h3>Font Family</h3>
+                  <p>Font Family</p>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer>
+        <div>
+            <h3>Introduction to CSS</h3>
+            <a href="#selector">CSS Selector</a>
+            <a href="#webforms">Webforms</a>
+            <a href="#card-component">Card Component</a>
+            <a href="#css-unit">CSS Unit</a>
+            <a href="#font-properties">Font Properties</a>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Cavite, Philippines</p>
+            <p>info@test.com</p>
+            <p>+63 987 111 1234</p>
+            <p>&copy;2023 Copyright; SDCA</p>
+        </div>
+    </footer>
+</body>
+</html>
